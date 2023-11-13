@@ -29,7 +29,7 @@ class GamesController < ApplicationController
       word_serialized = URI.open(url).read
       word_data = JSON.parse(word_serialized)
       if word_data['found']
-        @answer = "Congratulations! #{params[:word].upcase} is a valid English word! Your score is #{@score}"
+        @answer = "Congratulations! #{params[:word].upcase} is a valid English word!"
       else
         @answer = "Sorry but #{params[:word].upcase} does not seem to be a valid English word..."
       end

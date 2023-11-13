@@ -75,3 +75,31 @@ form {
   background-color: #3498dc;
   color: white;
 }
+
+#score-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  width: 100px;
+  padding:10px;
+  background-color: green;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#score-card h1{
+  margin-top: 10px;
+  padding: 0;
+}
+
+#score-card h4{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
